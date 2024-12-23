@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(./bg.jpg);
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    /* max-width: clamp(100px 100vw 1200px); clamp korle boro choto kora te image zoom in hoy na*/
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 100px;
+}
+
+.main .box{
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+
+nav img , .btn1 {
+    position: relative; /*the element is positioned relative to its normal position.*/
+    z-index: 10;
+}
+
+
+.hero{
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    gap: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+
+.hero > :nth-child(1){
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero > :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero > :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation{
+    height: 5px;
+    background-color: grey;
+    position: relative;
+    z-index: 20;
+}
+
+.btn{
+    padding: 5px;
+    font-weight: 700 ;
+    background-color: white;
+    border: none;
+    border-radius: 5px 12px;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: rgb(191, 2, 75);
+    transition: background-color 1s ease-in-out;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 8px 25px;
+
+    
+}
+
+.btn-sm{
+    background-color: red;
+    color: white;
+}
+
+.inp>input{
+    padding: 6px;
+    border-radius: 5px 12px;
+    background-color: rgba(23, 23, 23, 0.2);
+}
