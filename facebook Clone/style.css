@@ -137,6 +137,7 @@ main {
 .container{
     display: grid;
     grid-template-columns: 1fr;
+    margin: auto;
     justify-items: center;
     align-items: center;
 }
@@ -146,7 +147,7 @@ main {
     justify-items: center;
     align-items: center;
     text-align: center;
-    margin-left: 5%;
+    margin-left: 0%;
     position: static;
     margin-top: -18px;
 }
@@ -256,6 +257,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    width: 70vw;
 }
 
 .lowtxt{
