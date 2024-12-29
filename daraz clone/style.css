@@ -262,3 +262,116 @@
 .banner img{
     width: 1252px;
 }
+
+
+.tag{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ff8e56;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.flash-icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 auto;
+    width: 1180px;
+    height: 280px;
+    gap: 10px;
+}
+
+.product-optn{
+    width: 1180px;
+    height: 50px;
+    background-color: #ffcaa2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 99, 9);
+}
+
+.product-optn p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btn{
+    padding: 5px;
+    background: transparent;
+    border: 2px solid rgb(252, 124, 27);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ff8e56;
+    font-weight: 500;
+}
+
+.flash-sell{
+    background-image: linear-gradient(180deg, rgba(255, 194, 136, 0.342), white);
+    /* margin-top: 8px; */
+    width: 1180px;
+    height: 280px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.common{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 170px;
+    /* background-color:#f1ff52 ; */
+    background-position: cover;
+    background-repeat: no-repeat;
+
+}
+
+.price{
+    color: #ff8e56;
+    font-weight: 900;
+}
+
+.common:hover{
+    scale: 1.1;
+    transition: 0.3s ease-out;
+    color: #ff8e56;
+    filter: drop-shadow(1px 1px 10px rgba(255, 182, 46, 0.485));
+
+}
+
+.common img{
+border-radius: 10px;
+}
+
+
+.footer{
+    height: 150px;
+    width: 100%;
+    margin-top: 80px;
+    background-image: linear-gradient(180deg, rgba(255, 194, 136, 0.342), white);
+}
+
+.footer-txt{
+    width: 70vw;
+    background-color: red;
+    position: relative;
+}
