@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Hind+Siliguri:wght@300;400;500;600;700&family=Lilita+One&family=Parkinsans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Hind Siliguri", serif;
+    box-sizing: border-box;
+    /* object-fit: cover; */
+}
+
+.nav{
+    width: 100%;
+    height: 118.4px;
+    background-color: #F85606;
+}
+
+.nav-options{
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    gap: 25px;
+    margin-right: 40px;
+}
+
+.nav-options a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.85rem;
+}
+
+.nav-options a:hover{
+    color: #d7b5a4;
+}
+
+.logo-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.logo{
+    /* margin-top: 10px; */
+    margin-right:50px;
+    display: flex;
+}
+
+.search{
+    width: 688px;
+    height: 45px; 
+}
+
+.search input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 13px 19px;
+
+}
+
+.search input:hover{
+    box-shadow: 1px 1px 15px 1px whitesmoke;
+}
+
+.search-logo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+    background-color: #ffc5a8;
+    color: #F85606;
+}
+
+.search-logo:hover{
+    background-color: #ff8e56;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px 1px whitesmoke;
+}
+
+.cart-logo{
+    margin-left: 40px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* hero section  */
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    background-image: url(./img/banner.jpg);
+    height: 344px;
+    width: 988px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card{
+    height: 344px;
+    width: 194px;
+    /* background-color: red; */
+    background-image: -webkit-linear-gradient(120deg,rgba(255, 0, 0, 0.299),rgba(255, 166, 0, 0.545),aliceblue);
+    
+}
+
+.card-img1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card-img1 a{
+    text-decoration: none;
+    color: #ab3900;
+}
+
+.card-img2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.upper-txt{
+    display: flex;
+    position: absolute;
+    color: aliceblue;
+    top: 5px;
+    left: 22px;
+    font-size: 0.8rem;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper-txt p{
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+.mid-txt{
+    position: absolute;
+    top: 25px;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.last-txt1{
+    display: flex;
+    gap: 5px;
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    /* left: 28px; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.heading{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.heading :nth-child(2){
+    margin-top: -12px;
+}
+.last-txt2{
+    display: flex;
+    gap: 5px;
+    color: aliceblue;
+    position: absolute;
+    top: 90px;
+    /* left: 47px; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.heading{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.heading :nth-child(2){
+    margin-top: -12px;
+    width: 100%;
+}
+
+.qr-sec{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qr-sec p{
+    margin-top: -2px;
+}
+
+.qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.txt-final{
+    text-align: center;
+    cursor: pointer;
+    color: #441700;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    background-color: #f1ff52;
+}
+
+.banner:hover{
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.536);
+    transform: translateY(45deg);
+}
+
+.banner img{
+    width: 1252px;
+}
