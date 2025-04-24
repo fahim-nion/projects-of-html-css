@@ -42,7 +42,143 @@ body{
     font-size: 13px;
 }
 
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none
+    ;
+}
+
+.right{
+    margin: 16px 0;
+    position: relative;
+}
+
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+
+.header{
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+
+.header >*{
+    padding: 30px;
+}
 
 
+.spotifyPlaylists{
+    padding: 6px;
+}
+
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
 
 
+.card{
+    /* border: 2px solid red; */
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+.card > *{
+    padding-top: 10px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.play{
+    width: 60px;
+    position: absolute;
+    right: 17px;
+    top: 179px;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.play:hover{
+    opacity: 1;
+    top: 168px;
+}
+
+.buttons > *{
+    margin: 0 2px;
+}
+
+
+.signUpBtn{
+    background-color: rgb(34,34,34);
+    color: rgb(157, 152, 152);
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid rgba(157, 152, 152, 0.529);
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.signUpBtn:hover{
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.627);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.386);
+}
+
+.loginBtn{
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+.loginBtn:hover{
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 18px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.627);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.386);
+}
+
+
+.playBar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(135, 221, 135);
+    width: 100%;
+    padding: 12px;
+}
+
+.songButtons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}

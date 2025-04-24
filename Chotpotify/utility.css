@@ -35,3 +35,21 @@
 .p-1{
     padding: 10px;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* dark background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* medium gray */
+    border-radius: 10px;
+    border: 2px solid #1e1e1e; /* padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* lighter on hover */
+}
