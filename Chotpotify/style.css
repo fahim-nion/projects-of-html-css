@@ -173,7 +173,7 @@ body{
     position: absolute;
     bottom: 0;
     background-color: rgb(135, 221, 135);
-    width: 100%;
+    width: 90%;
     padding: 12px;
 }
 
@@ -181,4 +181,23 @@ body{
     display: flex;
     justify-content: center;
     gap: 12px;
+}
+.songList{
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.songList ul{
+    padding: 0 42px;
+}
+
+.songList ul li{
+    list-style-type: decimal;
+    margin-top: 10px;
+}
+
+.playNow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
