@@ -260,17 +260,41 @@ const playMusic  = (idx,pause = false)=>{
     currentSong.src = track.url;
 
     if (!pause){
+        currentSong.play().then(()=>{
+            play.src = "img/svg/pause-svgrepo-com.svg"
+        }).catch((err)=>{
+            console.warn("Playback Blocked:",err)
+        })
+    }
+    document.querySelector(".songinfo").innerHTML =`
+        <img src = "${track.cover}" width="88" style="margin-right: 8px;">
+        ${track.title}
+    `;
+    document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
+}
+
+function togglePlayPause(){
+    if(currentSong.paused){
         currentSong.play();
+        play.src = "./img/svg/play-svgrepo-com.svg"
+    }else{
+        currentSong.pause();
         play.src = "img/svg/pause-svgrepo-com.svg"
     }
 }
 
 
 
-
 async function main() {
 
     await getCloudSongs();
+    playMusic(0,true)  //preload first song but dont play
+
+    // Play/Pause Button
+    const playButton = document.getElementById("play");
+    if (playButton) {
+        playButton.addEventListener("click",togglePlayPause)
+    }
 }
 
 main();

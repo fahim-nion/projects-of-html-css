@@ -192,12 +192,24 @@ body{
 }
 
 .songList ul li{
+    max-width: 300px;
+    max-height: 200px;
+    gap: 5px;
+    display: flex;
     list-style-type: decimal;
     margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow-x: hidden;
 }
 
 .playNow{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.songinfo{
+    font-size: 32px;
 }
