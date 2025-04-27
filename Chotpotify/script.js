@@ -213,7 +213,7 @@ function scndToMinSec(sec){
     }
     const min = Math.floor(sec/60);
     const seconds = Math.floor(sec % 60);
-    return `${String(min).padStart(2,"0")}:${String(seconds).padStart(2,"0")};`
+    return `${String(min).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`
 }
 
 
@@ -237,7 +237,7 @@ async function getCloudSongs() {
     </div>
     <div class="playNow">
         <span>Play Now</span>
-        <img src="./img/svg/play-svgrepo-com.svg" alt="">
+        <img class ="sidePlay"src="./img/svg/play-svgrepo-com.svg" alt="">
     </div>
         </li>
         `
@@ -254,32 +254,47 @@ async function getCloudSongs() {
 
 
 //music play for idx
-
+let lastPlayIcon = null;
+let currentSongIndex = 0;
 const playMusic  = (idx,pause = false)=>{
     const track = cloudSongs[idx];
-    currentSong.src = track.url;
-
-    if (!pause){
-        currentSong.play().then(()=>{
-            play.src = "img/svg/pause-svgrepo-com.svg"
-        }).catch((err)=>{
-            console.warn("Playback Blocked:",err)
-        })
+    if (currentSongIndex !== idx) {
+        currentSong.src = track.url;
+        currentSongIndex = idx;
     }
-    document.querySelector(".songinfo").innerHTML =`
-        <img src = "${track.cover}" width="88" style="margin-right: 8px;">
-        ${track.title}
-    `;
-    document.querySelector(".songtime").innerHTML = "00:00 / 00:00";
+
+    if (!pause) {
+        currentSong.play().then(() => {
+            if (lastPlayIcon) {
+                lastPlayIcon.src = "./img/svg/play-svgrepo-com.svg";
+            }
+            const allPlayIcons = document.querySelectorAll(".sidePlay");
+            allPlayIcons[idx].src = "img/svg/pause-svgrepo-com.svg";
+
+            lastPlayIcon = allPlayIcons[idx]; 
+        }).catch((err) => {
+            console.warn("Playback Blocked:", err);
+        });
+    }
+    currentSong.addEventListener("timeupdate",()=>{
+        document.querySelector(".songtime").innerHTML = `
+        <b>${scndToMinSec(currentSong.currentTime)}</b> /
+        <b>${scndToMinSec(currentSong.duration)}</b>
+        `
+    });
 }
 
 function togglePlayPause(){
     if(currentSong.paused){
         currentSong.play();
-        play.src = "./img/svg/play-svgrepo-com.svg"
+        if (lastPlayIcon) {
+            lastPlayIcon.src = "img/svg/pause-svgrepo-com.svg";
+        }
     }else{
         currentSong.pause();
-        play.src = "img/svg/pause-svgrepo-com.svg"
+        if (lastPlayIcon) {
+            lastPlayIcon.src = "./img/svg/play-svgrepo-com.svg";
+        }
     }
 }
 
