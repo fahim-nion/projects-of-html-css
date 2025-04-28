@@ -9,18 +9,24 @@
 }
 
 body{
-    background-color:#222;
+    background-image: url(./imgw/original-d33e0ccd29b617c844507a72dfe00c51.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba,#5b548a);
-    color: #fff;
-    margin: 100px auto 0;
+    /* background: linear-gradient(135deg, #00feba,#5b548a); */
+    background: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    margin: 100px auto;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    backdrop-filter:blur(20px) ;
 }
 
 .search{
@@ -82,7 +88,7 @@ body{
 }
 
 .weather h2{
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 100;
     margin-top: -10px;
 }

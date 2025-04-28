@@ -14,6 +14,7 @@ async function checkWeather(city) {
             document.querySelector(".humidity").innerHTML = `${Math.floor(data.main.humidity)}%`
             document.querySelector(".wind").innerHTML = `${data.wind.speed} km/h`
         } else{
+            document.querySelector(".weather-icon").src="./imgw/emoticon-moon-night-2-svgrepo-com.svg"
             document.querySelector(".city").innerHTML = `Sorry, couldn't find the city`;
             document.querySelector(".temp").innerHTML = ``;
             document.querySelector(".humidity").innerHTML = ``;
@@ -22,6 +23,7 @@ async function checkWeather(city) {
         
     } catch (error) {
         console.log(error)
+        document.querySelector(".weather-icon").src="./imgw/emoticon-moon-night-2-svgrepo-com.svg"
         document.querySelector(".city").innerHTML = `Sorry, couldn't find the city`;
         document.querySelector(".temp").innerHTML = ``;
         document.querySelector(".humidity").innerHTML = ``;
@@ -43,6 +45,7 @@ async function checkWeather(city) {
     }
     
     document.querySelector(".details").style.display = "flex"
+    document.querySelector(".weather h2").style.fontSize = "40px"
 
 
 }
