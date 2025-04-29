@@ -29,4 +29,4 @@ To get started with the project:
 1. Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/yourusername/simple-quiz-app.git
+git clone https://github.com/fahim-nion/simple-quiz-app.git
