@@ -26,7 +26,7 @@ A simple and elegant web app that displays a random inspirational quote each tim
 - **HTML5**  
 - **CSS3**  
 - **JavaScript (ES6+)**
-- **ZenQuotes API** (or Buddha API)
+- **Buddha Quote API**
 - **AllOrigins CORS Proxy**
 - **Twitter Intent API** (for sharing on X)
 
