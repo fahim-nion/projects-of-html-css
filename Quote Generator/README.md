@@ -8,7 +8,6 @@ A simple and elegant web app that displays a random inspirational quote each tim
 
 ![App Screenshot](./imgq/Screenshot%202025-05-02%20081831.png)
 
-> _Replace the above image path with an actual screenshot of your app interface._
 
 ---
 
@@ -54,4 +53,4 @@ cd random-quote-generator
 
 ---
 
-Let me know if you'd like me to generate a sample screenshot placeholder or a GitHub-friendly version!
+> _Let me know if you'd like me to generate a sample screenshot placeholder or a GitHub-friendly version!_
