@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Playwrite RO","Playfair Display";
+}
+
+body{
+    background: #bbc6fa;
+}
+h1 img{
+    width: 40px;
+    margin-left: -15px;
+}
+
+.container{
+    background: #c4fff9;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+}
+
+.container h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.container h1::after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    border-radius: 3px;
+    background:rgb(23,124,229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-55%);
+}
+
+.container blockquote{
+    font-size: 26px;
+    /* background-color: red; */
+    min-height: 110px;
+}
+
+.container blockquote::before , .container blockquote::after{
+    content:'"';
+}
+
+.container span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.container span::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.btn{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    background: rgb(23,124,229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Playfair Display";
+    box-shadow: 0px 0px 10px rgb(156, 254, 203);
+}
+
+.btn button:active{
+    scale: 0.95;
+}
+
+.btn button img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.quote{
+    font-family: Playfair Display;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author{
+    font-family: Playfair Display;
+}
