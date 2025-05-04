@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <img src="./imgM/back-svgrepo-com.svg" alt="">
+                </div>
+                <div class="circle">
+                    <img src="./imgM/audio-playlist-svgrepo-com.svg" alt="">
+                </div>
+            </nav>
+            <div class="cover">
+                <img src="./imgM/jiya.jpeg" class="song-img">
+                <h1>Jiya</h1>
+                <p>Anubha Bajaj</p>
+            </div>
+            <audio id="song">
+                <source src="./song/Jiya (Official Lyric Video) - Anubha Bajaj.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div class="back c"><img src="./imgM/playback-svgrepo-com.svg" alt=""></div>
+                <div class="play-pause c" onclick="playPause()"><img src="./imgM/video-file-2-svgrepo-com.svg" alt=""></div>
+                <img src="./imgM/" alt="">
+                <div class="next c"><img src="./imgM/next-svgrepo-com.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
