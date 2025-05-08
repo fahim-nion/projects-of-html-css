@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+body{
+    background:#edeaff;
+}
+
+.stopwatch{
+    /* background: red; */
+    width: 90%;
+    max-width: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.488),rgba(0, 0, 0, 0.734)),
+    url(./imgS/pexels-mert-2151839050-31885640.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stopwatch h1{
+    margin-top: 60px;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons img{
+
+}
