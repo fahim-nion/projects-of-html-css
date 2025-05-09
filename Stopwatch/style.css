@@ -36,8 +36,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
-.buttons img{
-
+#play{
+    width: 80px;
 }
+
+.buttons :nth-child(1),
+.buttons :nth-child(3){
+    width: 40px;
+}
+
