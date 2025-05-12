@@ -19,8 +19,3 @@ function watchStart(){
         stopwatch()
     }, 1000);
 }
-
-console.log("Hi")
-console.log("Hi")
-console.log("Hi")
-console.log("Hi")
