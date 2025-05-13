@@ -12,7 +12,7 @@ A simple and elegant stopwatch built with **HTML, CSS, and JavaScript**. This ap
 
 ## 🚀 Live Demo
 
-> [🔗 View a Live Demo](https://your-live-demo-link.com)
+> [🔗 View a Live Demo](https://stopwatch-1000.netlify.app)
 
 ---
 
