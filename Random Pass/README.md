@@ -12,7 +12,7 @@ This is a simple and responsive **Random Password Generator** built using HTML, 
 
 ## 🖼️ UI Preview
 
-![Screenshot of the app](./imgr/Screenshot%202025-04-30%20073100.png) <!-- Replace with your actual screenshot if available -->
+![Screenshot of the app](./imgr/Screenshot%202025-04-30%20073100.png)
 
 
 ## 🧩 How It Functions
