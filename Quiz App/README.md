@@ -2,6 +2,10 @@
 
 This is a simple quiz application built with HTML, CSS, and JavaScript. The app displays multiple-choice questions, and the user can select an answer. The app provides immediate feedback on whether the selected answer is correct or incorrect.
 
+## 🖼️ UI Preview
+
+![Screenshot of the app](./imgq/Screenshot%202025-06-14%20211301.png)
+
 ## Features
 
 - Displays questions with multiple-choice answers.
