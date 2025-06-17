@@ -7,6 +7,10 @@ This is a simple web-based QR Code Generator built using **HTML**, **CSS**, and 
 > *[See a live Demo Here](https://qr-gen1001.netlify.app/)*
 
 ---
+## 📸 Visual Representation
+
+
+---
 
 ## 📸 Features
 
