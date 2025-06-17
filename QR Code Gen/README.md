@@ -8,7 +8,7 @@ This is a simple web-based QR Code Generator built using **HTML**, **CSS**, and 
 
 ---
 ## 📸 Visual Representation
-
+![Screenshot of the app](./imgQ/Screenshot%202025-06-14%20211427.png)
 
 ---
 
