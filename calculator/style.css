@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
 
 *{
     margin: 0;
@@ -76,4 +76,131 @@ form .display input{
 .operator:hover{
     transform: scale(1.1);
     transition: transform 0.2s ease-in;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.calculator {
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.495);
+    width: 100%;
+    max-width: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    border: 0;
+    outline: 0;
+    width: 20%;
+    max-width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+                 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.1s ease-in;
+}
+
+
+
+form input:hover {
+    transform: scale(1.1);
+}
+
+form input:active {
+    box-shadow: 0 0 10px #33ffd8;
+    background-color: #0bcaa7;
+}
+
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: 2px solid #33ffd8;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #3a4452;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    color: #fff;
+    background: transparent;
+    box-shadow: none;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+}
+
+.equal {
+    flex: 1;
+    max-width: none;
+}
+
+.operator {
+    color: #33ffd8;
+    border: 2px solid #33ffd8;
+    box-shadow: 0 0 0px #33ffd8;
+}
+
+.operator:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+
+@media (max-width: 500px) {
+    form input {
+        width: 22%;
+        font-size: 18px;
+        height: 55px;
+        margin: 4px;
+    }
+
+    .display input {
+        font-size: 35px;
+    }
+
+    .equal {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
