@@ -62,13 +62,6 @@ function closePopup(){
     └── checkmark-round-svgrepo-com.svg
 ```
 
-## 🌱 Future Enhancements
-
-- ✅ Add form input validation
-- ✅ Auto-close the popup after a few seconds
-- ✅ Use `localStorage` to remember form status
-- ✅ Add animations for a smoother appearance
-- ✅ Add accessibility features (keyboard navigation, ARIA roles)
 
 ## 📁 Live Demo & Source Code
 
