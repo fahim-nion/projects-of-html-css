@@ -7,10 +7,20 @@
     font-family: "Hind Siliguri","Truculenta";
 }
 
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color:#212121;
+    --secondary-color:#c6c6c6;
+}
+
 .hero{
     height: 100vh;
     width: 100%;
-    background: #edf2fc;
+    background: var(--primary-color);
     position: relative;
 }
 
@@ -38,11 +48,16 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #606163;
+    color: var(--secondary-color);
 }
 
 nav ul li a:hover{
     color: #4dbae6;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
 }
 
 
@@ -54,7 +69,7 @@ nav ul li a:hover{
 
 .info h1{
     font-size: 70px;
-    color: #212121;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
@@ -63,15 +78,15 @@ nav ul li a:hover{
 }
 
 .info p{
-    color: #606163;
+    color: var(--secondary-color);
     line-height: 22px;
 }
 
 .info a{
-    background: #212121;
+    background:var(--secondary-color);
     padding: 10px 18px;
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-color);
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
@@ -140,4 +155,9 @@ nav ul li a:hover{
 
 .social-links a:hover{
     color: #ff4321;
+}
+
+#icon{
+    width: 25px;
+    margin-top: -8px;
 }
