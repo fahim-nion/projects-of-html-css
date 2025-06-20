@@ -49,6 +49,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: var(--secondary-color);
+    font-family: "Truculenta";
 }
 
 nav ul li a:hover{
@@ -80,6 +81,7 @@ nav ul{
 .info p{
     color: var(--secondary-color);
     line-height: 22px;
+    font-family: "Truculenta";
 }
 
 .info a{
@@ -91,6 +93,7 @@ nav ul{
     margin: 30px 0;
     border-radius: 5px;
     transition: 0.5s ease;
+    font-family: "Truculenta";
 }
 
 .info a:hover{
