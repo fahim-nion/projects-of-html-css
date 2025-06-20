@@ -1,4 +1,12 @@
 var icon = document.getElementById("icon");
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
 icon.onclick = ()=>{
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
@@ -11,3 +19,4 @@ icon.onclick = ()=>{
         document.querySelector(".logo").style.filter = "none"
     }
 }
+
