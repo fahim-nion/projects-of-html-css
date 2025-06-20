@@ -6,7 +6,9 @@ This is a responsive personal portfolio homepage built using **HTML**, **CSS**, 
 
 ## 🖼️ Preview
 
-![Portfolio Preview](./preview.png)
+![Portfolio Preview](./imgD/Screenshot%202025-06-21%20033921.png)
+![Portfolio Preview](./imgD/Screenshot%202025-06-21%20033936.png)
+
 
 ---
 
@@ -28,6 +30,4 @@ This is a responsive personal portfolio homepage built using **HTML**, **CSS**, 
 - JavaScript (DOM Manipulation)
 
 ---
-
-## 📂 Folder Structure
 
