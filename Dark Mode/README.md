@@ -31,3 +31,24 @@ This is a responsive personal portfolio homepage built using **HTML**, **CSS**, 
 
 ---
 
+## 💡 How Dark Mode Works
+The script toggles a dark-theme class on the <body> or root element, and CSS variables (--primary-color, --secondary-color) are switched to apply dark mode colors.
+
+```javascript
+const icon = document.getElementById("icon");
+icon.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+});
+```
+## 🔮 Future Enhancements
+- ✅ Save theme preference in localStorage
+
+- ✅ Animate hamburger to X transition
+
+- 🔲 Add smooth scrolling for nav links
+
+- 🔲 Add accessibility attributes (e.g., aria-labels)
+
+## 🔗 Live Demo
+>[Portfolio]( https://portfolio-js1001.netlify.app)
+---
