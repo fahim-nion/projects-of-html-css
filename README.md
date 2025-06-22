@@ -1,10 +1,6 @@
+# MERN Learning Repository
 
-## MERN
-
- 
-# HTML & CSS Webpages Repository
-
-Welcome to the **HTML & CSS Webpages Repository**! This repository contains a collection of projects, templates, and code snippets created using **HTML** and **CSS**. It serves as a resource hub for building modern, responsive, and visually appealing webpages.
+Welcome to the **MERN Learning Repository**! This repository contains a collection of projects, templates, and code snippets created using **Mern Technologies**. It serves as a resource hub for building modern, responsive, and visually appealing webpages.
 
 ---
 
@@ -78,13 +74,6 @@ Contributions are welcome! If you have improvements, bug fixes, or new webpage i
 
 ---
 
-## 🛠️ Technologies Used
-
-- **HTML5**: Markup for structuring webpages.
-- **CSS3**: Stylesheets for design and layout.
-- **Flexbox & Grid**: For responsive layouts.
-
----
 
 ## 📖 Learning Resources
 
