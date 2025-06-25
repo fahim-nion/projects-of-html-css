@@ -42,10 +42,34 @@ function validateEmail(){
     var email = document.getElementById("contact-email").value;
     if (email.length == 0){
         emailError.innerHTML = `<i class="fa-solid fa-circle-exclamation" style="color: #FFD43B;"></i> email is required`
+        return false;
     }
     if (!(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).test(email)){
         emailError.innerHTML = `<i class="fa-solid fa-circle-exclamation" style="color: #FFD43B;"></i> email invalid`
         return false
     }
-    emailError.inn
+    emailError.innerHTML = `<i class="fa-solid fa-check" style="color: #33e689;"></i>`
+    return true
+}
+
+function validateMessage(){
+    var message = document.getElementById("contact-message").value.trim();
+    var required = 50;
+    var left = required - message.length;
+    if (left > 0){
+        messageError.innerHTML = `${left} more characters left`
+        return false;
+    }
+    messageError.innerHTML = `<i class="fa-solid fa-check" style="color: #33e689;"></i>`
+    return true
+}
+
+function validateForm(){
+    if (!validateName() || !validatePhone() || !validateMessage() || !validateEmail()){
+        submitError.innerHTML = `<i class="fa-solid fa-circle-exclamation"  style="color: #FFD43B;"></i> please complete all the input`
+        setTimeout(() => {
+            submitError.classList.add("submit-error-hide")
+        }, 3000);
+        return false
+    }
 }

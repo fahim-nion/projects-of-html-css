@@ -28,10 +28,10 @@
             </div>
             <div class="input-group">
                 <label>Your Message</label>
-                <textarea rows="5"></textarea>
+                <textarea rows="5" maxlength="50" id="contact-message" onkeyup="validateMessage()"></textarea>
                 <span id="message-error"></span>
             </div>
-            <button>Submit</button>
+            <button onclick="return validateForm()">Submit</button>
             <span id="submit-error"></span>
         </form>
     </div>

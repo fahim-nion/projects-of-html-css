@@ -92,3 +92,15 @@ form button{
     align-items: center;
     justify-content: center;
 }
+
+#submit-error i{
+    font-size: 22px;
+    margin-right: 5px;
+    visibility: visible;
+}
+
+#submit-error-hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-out, visibility 0s linear 1s;
+}
