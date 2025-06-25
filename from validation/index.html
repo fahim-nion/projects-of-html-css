@@ -13,17 +13,17 @@
             <i class="fa-solid fa-paper-plane"></i>
             <div class="input-group">
                 <label>Full Name</label>
-                <input type="text" placeholder="Enter Your Full Name">
+                <input type="text" placeholder="Enter Your Full Name" id="contact-name" onkeyup="validateName()">
                 <span id="name-error"></span>
             </div>
             <div class="input-group">
                 <label>Phone No.</label>
-                <input type="tel" placeholder="012345 - 78910">
+                <input type="tel" placeholder="012345 - 78910" id="contact-phone" onkeyup="validatePhone()">
                 <span id="phone-error"></span>
             </div>
             <div class="input-group">
                 <label>Email Id</label>
-                <input type="email" placeholder="Enter Your Email">
+                <input type="email" placeholder="Enter Your Email" id="contact-email" onkeyup="validateEmail()">
                 <span id="email-error"></span>
             </div>
             <div class="input-group">
