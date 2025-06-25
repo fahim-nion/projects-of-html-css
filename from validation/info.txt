@@ -1,0 +1,10 @@
+name is required 
+
+phone is required 
+
+email is required 
+
+message is required 
+
+please complete all the input
+            
