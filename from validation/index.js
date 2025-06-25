@@ -66,10 +66,16 @@ function validateMessage(){
 
 function validateForm(){
     if (!validateName() || !validatePhone() || !validateMessage() || !validateEmail()){
+        submitError.classList.add("show")
         submitError.innerHTML = `<i class="fa-solid fa-circle-exclamation"  style="color: #FFD43B;"></i> please complete all the input`
         setTimeout(() => {
-            submitError.classList.add("submit-error-hide")
-        }, 3000);
+            submitError.classList.remove("show")
+            submitError.classList.add("hide")
+            setTimeout(() => {
+                submitError.innerHTML = "";
+            }, 500);
+        }, 4000);
         return false
     }
+    return true
 }

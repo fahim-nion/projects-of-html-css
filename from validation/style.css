@@ -87,20 +87,28 @@ form button{
 }
 
 #submit-error{
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     color: red;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
 }
 
 #submit-error i{
     font-size: 22px;
     margin-right: 5px;
-    visibility: visible;
 }
 
-#submit-error-hide{
-    visibility: hidden;
+#submit-error.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+#submit-error.hide {
     opacity: 0;
-    transition: opacity 1s ease-out, visibility 0s linear 1s;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
 }
