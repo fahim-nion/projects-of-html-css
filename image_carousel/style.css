@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TikTok Sans", sans-serif;
+}
+
+body{
+    background:#191919;
+}
+
+.gallery{
+    width: 900px;
+    display: flex;
+}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.gallery div img{
+    width: 100%;
+}
