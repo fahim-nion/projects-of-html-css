@@ -14,3 +14,8 @@ nextBtn.addEventListener("click",()=>{
 backBtn.addEventListener("click",()=>{
     scrollContainer.scrollLeft -= scrollContainer.clientWidth;
 })
+
+let random = Math.floor(1+(9-1)*Math.random())
+console.log(random)
+
+let lttr = 
