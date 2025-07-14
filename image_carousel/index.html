@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image carousel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <i class="fa-solid fa-arrow-left" style="color: #ff9d4d;""></i>
-    <i class="fa-solid fa-arrow-right" style="color: #ff9d4d;"></i>
-    <div class="gallery">
-        <div>
-            <span>
-                <img src="./imgi/pexels-abrek-okur-622168308-32600114.jpg" alt="">
-                <img src="./imgi/pexels-artem-shuba-2153271717-32689373.jpg" alt="">
-                <img src="./imgi/pexels-berkay-mavral-389232961-15518197.jpg" alt="">
-            </span>
+    <div class="gallery-wrap">
+        <i class="fa-solid fa-arrow-left" id="backBtn"></i>
+        <div class="gallery">
+            <div class="gallery-slide">
+                <img src="./imgi/pexels-caroline-mourer-517639631-32507137.jpg" alt="">
+                <img src="./imgi/pexels-christine-roy-559641051-16928576.jpg" alt="">
+                <img src="./imgi/pexels-jordi-young-2152191988-32162709.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="./imgi/pexels-lemapuche-breton-1470236-13365992.jpg" alt="">
+                <img src="./imgi/pexels-lemapuche-breton-1470236-13378986.jpg" alt="">
+                <img src="./imgi/pexels-ram-265552768-19544484.jpg" alt="">
+            </div>
         </div>
+        <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
     </div>
+    <div class="txt1">
+        <span id="1">W</span>
+        <span id="2">a</span>
+        <span id="3">l</span>
+        <span id="4">l</span>
+        <span id="5">p</span>
+        <span id="6">a</span>
+        <span id="7">p</span>
+        <span id="8">e</span>
+        <span id="9">r</span>
+    </div>
+    <div class="txt2">
+        <span id="1">C</span>
+        <span id="2">a</span>
+        <span id="3">r</span>
+        <span id="4">o</span>
+        <span id="5">u</span>
+        <span id="6">s</span>
+        <span id="7">e</span>
+        <span id="8">l</span>
+    </div>
+
     <script src="./index.js"></script>
 </body>
+
 </html>
