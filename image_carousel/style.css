@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -68,5 +69,20 @@ body {
     transform: scale(0.9);
     filter: drop-shadow(0 0 20px rgb(255, 166, 0));
 }
+.texts{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
 
-.txt1, .txt2
+.txt1, .txt2{
+    display: flex;
+
+}
+
+.txt1 span, .txt2 span{
+    color: white;
+    font-size: 45px;
+}
+
