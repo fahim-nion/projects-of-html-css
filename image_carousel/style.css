@@ -88,4 +88,5 @@ body {
 
 .lumina{
     filter: drop-shadow(1px 0px 4px rgb(0, 255, 251));
+    transition: 0.2s ease-in-out;
 }

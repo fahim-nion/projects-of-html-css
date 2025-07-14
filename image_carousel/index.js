@@ -15,7 +15,23 @@ backBtn.addEventListener("click",()=>{
     scrollContainer.scrollLeft -= scrollContainer.clientWidth;
 })
 
-let random = Math.floor(1+(9-1)*Math.random())
+let random = Math.floor(0+(9-1)*Math.random())
+let random2 = Math.floor(0+(8-1)*Math.random())
 console.log(random)
 
-let lttr = 
+let lttr = document.querySelector(".txt1").children[random]
+let lttr2 = document.querySelector(".txt2").children[random2]
+
+setTimeout(() => {
+    changelumina()
+}, 300);
+
+function changelumina(){
+    lttr.classList.add("lumina")
+    lttr2.classList.add("lumina")
+    setTimeout(() => {
+    lttr.classList.remove("lumina")
+    lttr2.classList.remove("lumina")
+    }, 100);
+}
+
