@@ -68,3 +68,10 @@ form button:active{
     display: run-in;
     filter: drop-shadow(1px 1px 30px rgb(26, 255, 26));
 }
+
+span{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+    filter: drop-shadow(1px 1px 8px rgb(192, 255, 192));
+}
