@@ -70,8 +70,8 @@ form button:active{
 }
 
 span{
-    color: #61b752;
+    color: #53ff35;
     margin-top: 10px;
     display: block;
-    filter: drop-shadow(1px 1px 8px rgb(192, 255, 192));
+    filter: drop-shadow(1px 1px 5px rgb(192, 255, 192));
 }
