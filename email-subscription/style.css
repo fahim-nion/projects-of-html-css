@@ -15,6 +15,8 @@
     background-position: center;
     padding: 10px 10%;
     color: #fff;
+    position: relative;
+    /* z-index: 1; */
 }
 
 .hero h3{
@@ -39,6 +41,8 @@ form{
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 form input{
@@ -78,6 +82,14 @@ form button:active{
     margin-top: 10px;
     display: block;
     filter: drop-shadow(1px 1px 5px rgb(192, 255, 192));
+}
+
+.courtesy{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    opacity: 0.5;
 }
 
 
@@ -125,3 +137,4 @@ form button:active{
     0% { background-position: 0% 0%; }
     100% { background-position: 100% 0%; }
 }
+
