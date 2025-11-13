@@ -27,7 +27,7 @@ The project was inspired by and built with guidance from [Jamie Wilson's Form to
 ## Live Demo
 
 Check out the live demo of this project here:  
-[**View Live Demo**](https://your-live-demo-link.com)
+[**View Live Demo**](https://school-picnic.netlify.app)
 
 ## Installation
 
