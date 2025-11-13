@@ -75,3 +75,17 @@ span{
     display: block;
     filter: drop-shadow(1px 1px 5px rgb(192, 255, 192));
 }
+
+
+@keyframes appear {
+    0%,100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+@media screen {
+    
+}
