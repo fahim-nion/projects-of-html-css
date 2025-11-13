@@ -33,7 +33,7 @@ Check out the live demo of this project here:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/fahim-nion/projects-of-html-css/tree/main/email-subscription
 ```
 2. Open the project in your favorite editor (VS Code recommended).
 
