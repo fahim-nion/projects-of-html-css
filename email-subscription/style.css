@@ -18,34 +18,38 @@
 }
 
 .hero h3{
-    margin-top: 15%;
+    margin-top: 10vh;
     font-weight: 400;
-    font-size: 30px;
+    font-size: clamp(18px,4vw,30px);
 }
 
 .hero h1{
-    margin-top: 30px;
-    font-size: 50px;
+    margin-top: 2vh;
+    font-size: clamp(30px,8vw,55px)
 }
 
 .hero p {
-    margin: 10px 0 50px;
+    margin: 10px 0 5vh;
+    font-size: clamp(14px,3vw,18px)
 }
 
 form{
     background: #fff;
     display: flex;
-    width: fit-content;
+    width: 100%;
+    max-width: 500px;
     border-radius: 10px;
 }
 
 form input{
+    flex:1;
+    max-width: 400px;
+    /* width: clamp(50px, 90%, 400px); */
     border: 0;
     outline: none;
     padding: 10px 20px;
-    height: 70px;
-    width: 400px;
-    font-size: 16px;
+    height: clamp(40px,7vh,70px);
+    font-size: clamp(13px, 3vw, 16px);
     border-radius: 10px;
     
 }
@@ -69,7 +73,7 @@ form button:active{
     filter: drop-shadow(1px 1px 30px rgb(26, 255, 26));
 }
 
-span{
+#msg {
     color: #53ff35;
     margin-top: 10px;
     display: block;
@@ -85,7 +89,38 @@ span{
         opacity: 1;
     }
 }
+@media (max-width: 500px) {
+    form {
+        max-width: 98vw; /* Form fits smaller screens */
+    }
+    form input {
+        max-width: 98vw;
+        min-width: 90px;
+        height: 40px;   /* Slightly smaller height for mobile */
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    form button{
+        scale: 0.7;
+    }
+}
 
-@media screen {
-    
+
+@media (max-width: 400px) {
+    form input {
+        height: 50px;
+    }
+}
+
+
+#grad {
+    animation: animateBg 14s linear infinite;
+    color: linear-gradient(90deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1100% 100%;
+}
+@keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
 }
