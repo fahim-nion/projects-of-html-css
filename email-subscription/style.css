@@ -114,11 +114,12 @@ form button:active{
 
 
 #grad {
-    animation: animateBg 14s linear infinite;
-    color: linear-gradient(90deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+    background: linear-gradient(90deg,#cf5c5c,#c19b4a,#55632d,#c6ee4a,#42eca6,#64b3d9,#208ea2,#325988,#37499a,#69609f,#cf5c5c,#c19b4a);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     background-size: 1100% 100%;
+    animation: animateBg 4s linear infinite;
 }
 @keyframes animateBg {
     0% { background-position: 0% 0%; }
