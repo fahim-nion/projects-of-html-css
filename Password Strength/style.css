@@ -40,7 +40,7 @@ button {
     border-radius: 10%;
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     right: 4px;
     display: flex;
@@ -54,4 +54,12 @@ button:active{
 
 #msg {
     color:white ;
+    position: absolute;
+    bottom: -30px;
+    font-size: 15px;
+    display: none;
+}
+
+::placeholder{
+    font-size: 18px;
 }
