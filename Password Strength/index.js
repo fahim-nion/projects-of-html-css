@@ -1,6 +1,7 @@
 var pass = document.getElementById("password");
 var msg = document.getElementById("msg");
 var str = document.getElementById("strngth");
+var car = NaN
 
 pass.addEventListener("input",()=>{
     if(pass.value.length > 0){
@@ -8,4 +9,5 @@ pass.addEventListener("input",()=>{
     }else{
         msg.style.display = "none"
     }
+
 })
